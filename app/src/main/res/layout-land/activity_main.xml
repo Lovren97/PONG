@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hr.fer.ruazosa.pong.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="258dp"
+        android:layout_height="182dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="300dp"
+        android:backgroundTint="@android:color/background_light"
+        android:foregroundTint="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pomg" />
+
+    <Button
+        android:id="@+id/singleplayer"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="202dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="210dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="39dp"
+        android:fontFamily="monospace"
+        android:text="PLAY GAME"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/multiplayer"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="202dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="150dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="monospace"
+        android:text="MULTIPLAYER"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/singleplayer" />
+
+    <Button
+        android:id="@+id/exit"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="202dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="monospace"
+        android:text="EXIT"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/multiplayer" />
+</android.support.constraint.ConstraintLayout>
